@@ -12,6 +12,7 @@ class Operador
     public string Estado { get; set; }
     public bool EnStandby { get; set; }
     public bool EnCuartel { get; set; } 
+    public bool Dañado { get; set; }
 
     public Operador(int id, string tipo, int bateria, int cargaMaxima, int velocidadOptima, string localizacion, string estado, bool enStandby, bool enCuartel)
     {
@@ -24,6 +25,7 @@ class Operador
         Estado = estado;
         EnStandby = enStandby;
         EnCuartel = enCuartel;
+        Dañado = dañado;
     }
 
     public void Moverse(string nuevaLocalizacion, double distancia)
@@ -93,5 +95,37 @@ class Operador
         {
             Console.WriteLine("Operadores no están en la misma localización.");
         }
+    }
+    public void VolverAlCuartel(Cuartel cuartel)
+    {
+        if (!EnCuartel)
+        {
+            // Lógica para volver al cuartel
+            EnCuartel = true;
+            cuartel.operadores.Add(this);
+        }
+        else
+        {
+            Console.WriteLine("El operador ya está en el cuartel y no se puede mover de nuevo al cuartel.");
+        }
+    }
+    public void RealizarOrdenGeneral(Cuartel cuartel, Terreno terreno)
+    {
+        // Lógica para la orden general de recoger carga y llevar al sitio de reciclaje
+    }
+
+    public void RealizarMantenimiento(Cuartel cuartel)
+    {
+        // Lógica para la orden general de volver al cuartel para mantenimiento
+    }
+
+    public void CambiarBateria()
+    {
+        // Lógica para cambiar la batería
+    }
+
+    public void SimularDaño()
+    {
+        // Lógica para simular diferentes tipos de daños al operador
     }
 }
