@@ -43,7 +43,7 @@ class Terreno
                     case 5:
                         Mapa[i, j] = new Lago();
                         break;
-                    // Añade más tipos de localizaciones según sea necesario
+                    // Añade más tipos de localizaciones
                 }
             }
         }

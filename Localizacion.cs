@@ -18,7 +18,7 @@ class TerrenoBaldio : Localizacion
 
     public override void InteractuarConOperador(Operador operador)
     {
-        // Lógica específica para Terreno Baldío
+        // Lógica 
     }
 }
 
@@ -32,7 +32,7 @@ class Planicie : Localizacion
 
     public override void InteractuarConOperador(Operador operador)
     {
-        // Lógica específica para Planicie
+        // Lógica 
     }
 }
 
@@ -46,7 +46,7 @@ class Bosque : Localizacion
 
     public override void InteractuarConOperador(Operador operador)
     {
-        // Lógica específica para Bosque
+        // Lógica 
     }
 }
 
@@ -60,7 +60,7 @@ class SectorUrbano : Localizacion
 
     public override void InteractuarConOperador(Operador operador)
     {
-        // Lógica específica para Sector Urbano
+        // Lógica 
     }
 }
 
@@ -74,7 +74,7 @@ class Vertedero : Localizacion
 
     public override void InteractuarConOperador(Operador operador)
     {
-        // Lógica específica para Vertedero
+        // Lógica 
     }
 }
 
@@ -88,6 +88,6 @@ class Lago : Localizacion
 
     public override void InteractuarConOperador(Operador operador)
     {
-        // Lógica específica para Lago
+        // Lógica 
     }
 }
